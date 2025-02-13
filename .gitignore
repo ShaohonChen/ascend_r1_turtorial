@@ -5,3 +5,5 @@ output/
 tmp/
 
 *.log
+
+completiton_samples.txt
