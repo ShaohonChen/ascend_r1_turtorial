@@ -1,3 +1,7 @@
 kernel_meta/
 
 output/
+
+tmp/
+
+*.log
