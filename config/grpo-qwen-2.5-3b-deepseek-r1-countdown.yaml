@@ -1,5 +1,5 @@
 # Model arguments
-model_name_or_path: /root/weights/Qwen2.5-3B-Instruct
+model_name_or_path: /root/weights/Qwen2.5-0.5B-Instruct
 model_revision: main
 torch_dtype: bfloat16
 # attn_implementation: flash_attention_2
@@ -15,7 +15,7 @@ dataset_id_or_path: /root/datasets/Countdown-Task-3to4
 
 # Training arguments
 max_steps: 450
-per_device_train_batch_size: 2
+per_device_train_batch_size: 1
 gradient_accumulation_steps: 8
 gradient_checkpointing: true
 gradient_checkpointing_kwargs:
@@ -28,9 +28,9 @@ beta: 0.001 # 0.04 as in the deepseek math paper 0.001 from https://hijkzzz.noti
 max_prompt_length: 256
 max_completion_length: 1024
 num_generations: 2
-use_vllm: false
-# vllm_device: "npu:7"
-vllm_device: "cuda:7"
+use_vllm: true
+vllm_device: "npu:7"
+# vllm_device: "cuda:7"
 vllm_gpu_memory_utilization: 0.5
 
 # Logging arguments
