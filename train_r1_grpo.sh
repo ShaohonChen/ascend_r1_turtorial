@@ -5,5 +5,5 @@ accelerate launch \
     --num_processes 7 \
     --config_file config/dpsp_z2.yaml \
     train_r1_grpo.py \
-    --config config/grpo-qwen-2.5-3b-deepseek-r1-zero-countdown.yaml
+    --config config/grpo-qwen-2.5-7b-deepseek-r1-countdown.yaml
    
